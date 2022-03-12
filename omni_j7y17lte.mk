@@ -14,8 +14,6 @@
 # limitations under the License.
 #
 
-PRODUCT_RELEASE_NAME := j7y17lte
-
 $(call inherit-product, build/target/product/embedded.mk)
 
 # Inherit from our custom product configuration
@@ -25,8 +23,10 @@ PRODUCT_PACKAGES += \
 	charger_res_images \
 	charger
 
+# Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := j7y17lte
 PRODUCT_NAME := omni_j7y17lte
-PRODUCT_MODEL := Samsung Galaxy J7 2017
-PRODUCT_BRAND := samsung
-PRODUCT_MANUFACTURER := samsung
+PRODUCT_BRAND := Samsung
+PRODUCT_MODEL := Galaxy J7 Pro
+PRODUCT_MANUFACTURER := Samsung
+PRODUCT_RELEASE_NAME := Samsung Galaxy J7 Pro
